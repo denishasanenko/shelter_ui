@@ -1,14 +1,13 @@
 import React from 'react';
 
-function HomeComponent({
-    state,
+function AboutComponent({
                            count,
                            onIncrementClick,
                            onDecrementClick
                        }) {
-    console.log(state);
     return (
         <div>
+            <h1>About</h1>
             <p>current count: {count}</p>
             <button onClick={onIncrementClick}>Increment</button>
             <button onClick={onDecrementClick}>Decrement</button>
@@ -16,4 +15,4 @@ function HomeComponent({
     )
 }
 
-export default HomeComponent;
+export default AboutComponent;

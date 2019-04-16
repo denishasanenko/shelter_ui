@@ -1,2 +1,2 @@
-export {default as Home} from './HomeContainer';
-export {default as homeReducer} from './duck/reducers';
+export {default as About} from './AboutContainer';
+export {default as aboutReducer} from './duck/reducers';

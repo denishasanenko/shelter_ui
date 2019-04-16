@@ -1,17 +1,17 @@
 import { connect } from 'react-redux';
-import HomeComponent from './HomeComponent';
-import { homeOperations } from './duck';
+import AboutComponent from './AboutComponent';
+import { aboutOperations } from './duck';
 
 const mapStateToProps = state => {
     console.log(state);
-    const { count } = state.home;
+    const { count } = state.about;
     return { state, count }
 };
 
 const mapDispatchToProps = dispatch => {
     // '1' is the number by which you want to increment the count
-    const onIncrementClick = () => dispatch(homeOperations.incrementCount(1));
-    const onDecrementClick = () => dispatch(homeOperations.decrementCount(1));
+    const onIncrementClick = () => dispatch(aboutOperations.incrementCount(1));
+    const onDecrementClick = () => dispatch(aboutOperations.decrementCount(1));
 
     return {
         onIncrementClick,
@@ -19,9 +19,9 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-const HomeContainer = connect(
+const AboutContainer = connect(
     mapStateToProps,
     mapDispatchToProps
-)(HomeComponent);
+)(AboutComponent);
 
-export default HomeContainer;
+export default AboutContainer;

@@ -1,7 +1,7 @@
 import types from './types.js';
 
 const incrementCount = (value) => ({
-    type: types.INCREMENT_COUNT,
+    type: types.ABOUT_INCREMENT_COUNT,
     value: value
 });
 

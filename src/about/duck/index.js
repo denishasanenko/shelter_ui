@@ -1,5 +1,5 @@
 // index.js
-import homeReducer from './reducers';
-export { default as homeOperations } from './operations';
-export { default as homeTypes } from './types';
-export default homeReducer;
+import aboutReducer from './reducers';
+export { default as aboutOperations } from './operations';
+export { default as aboutTypes } from './types';
+export default aboutReducer;

@@ -7,9 +7,9 @@ const INITIAL_STATE = {
     showSpinner: false,
     subredditData: []
 };
-const homeReducer = (state=INITIAL_STATE, action) => {
+const aboutReducer = (state=INITIAL_STATE, action) => {
     switch(action.type) {
-        case types.INCREMENT_COUNT: {
+        case types.ABOUT_INCREMENT_COUNT: {
             console.log(state);
             const { value } = action;
             const { count } = state;
@@ -19,7 +19,7 @@ const homeReducer = (state=INITIAL_STATE, action) => {
             }
         }
 
-        case types.DECREMENT_COUNT: {
+        case types.ABOUT_DECREMENT_COUNT: {
             const { value } = action;
             const { count } = state;
             return {
@@ -52,4 +52,4 @@ const homeReducer = (state=INITIAL_STATE, action) => {
     }
 }
 
-export default homeReducer;
+export default aboutReducer;
