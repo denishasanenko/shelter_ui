@@ -1,6 +1,5 @@
 import { connect } from 'react-redux';
 import PetsComponent from './PetsComponent';
-import { petsOperations } from './duck';
 
 const mapStateToProps = state => {
     return {  }

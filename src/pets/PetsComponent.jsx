@@ -1,7 +1,6 @@
 import React from 'react';
 
-function PetsComponent({
-                       }) {
+function PetsComponent() {
     return (
         <div>
             <h1>Pets list</h1>
