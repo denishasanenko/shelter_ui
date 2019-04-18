@@ -6,6 +6,8 @@ import {
 } from 'react-router-dom';
 import { Home } from './home';
 import { About } from './about';
+import {Pets} from "./pets";
+import {Stories} from "./stories";
 
 
 class App extends Component {
@@ -18,12 +20,19 @@ class App extends Component {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
+                        <Link to="/pets">Pets</Link>
+                    </li>
+                    <li>
+                        <Link to="/stories">Stories</Link>
+                    </li>
+                    <li>
                         <Link to="/about">About</Link>
                     </li>
                 </ul>
                 <Route exact path='/' component={Home}/>
                 <Route path='/about'   component={About}/>
-                {/* Add all your remaining routes here, like /trending, /about, etc. */}
+                <Route path='/pets'   component={Pets}/>
+                <Route path='/stories'   component={Stories}/>
             </div>
         </Router>
     );

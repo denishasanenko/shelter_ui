@@ -6,7 +6,7 @@ const incrementCount = (value) => ({
 });
 
 const decrementCount = (value) => ({
-    type: types.DECREMENT_COUNT,
+    type: types.ABOUT_DECREMENT_COUNT,
     value: value
 });
 
