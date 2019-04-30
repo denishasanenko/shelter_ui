@@ -15,7 +15,7 @@ function HomeComponent({
                         <h2>Не обовязково бути господарем щоб піклуватися</h2>
                         <p>Зроби внесок за допомогою нашого додатку. Усi зібрани кошти підуть безпосередньо у притулки</p>
                     </div>
-                    <img src="/images/banner.png" />
+                    <img src="/images/banner.png" alt="Бобiк" />
                 </div>
             </div>
             <h1>Home</h1>
