@@ -1,5 +1,10 @@
 import types from './types.js';
 
+const getHomeShelters = (data) => ({
+    type: types.GET_HOME_SHELTERS,
+    data: data
+});
+
 const incrementCount = (value) => ({
     type: types.INCREMENT_COUNT,
     value: value
@@ -20,6 +25,7 @@ const receiveSubredditJson = (json) => ({
 });
 
 export default {
+    getHomeShelters,
     incrementCount,
     decrementCount,
     requestSubredditJson,

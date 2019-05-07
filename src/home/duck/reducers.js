@@ -5,7 +5,8 @@ const INITIAL_STATE = {
     count: 0,
     subreddit: '',
     showSpinner: false,
-    subredditData: []
+    subredditData: [],
+    shelters: []
 };
 const homeReducer = (state=INITIAL_STATE, action) => {
     switch(action.type) {
@@ -45,6 +46,14 @@ const homeReducer = (state=INITIAL_STATE, action) => {
                 subredditData,
                 showSpinner: false
 
+            }
+        }
+
+        case types.GET_HOME_SHELTERS: {
+            console.log(state, action);
+            return {
+                ...state,
+                shelters: action.data
             }
         }
 

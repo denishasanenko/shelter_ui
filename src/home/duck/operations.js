@@ -7,6 +7,15 @@ const decrementCount = Creators.decrementCount;
 const requestSubredditJsonAction = Creators.requestSubredditJson;
 const receiveSubredditJsonAction = Creators.receiveSubredditJson;
 
+const getHomeShelters = () => {
+    return async dispatch => {
+        const list = await fetch('http://localhost:5000/shelters')
+            .then(response => { return response.json(); });
+        return dispatch(Creators.getHomeShelters(list));
+
+    }
+};
+
 // 'fetchSubredditJson()' will fetch the JSON data from the subreddit,
 // extract the required information and update the Redux store with it.
 const fetchSubredditJson = (subreddit) => {
@@ -43,6 +52,7 @@ const fetchSubredditJson = (subreddit) => {
 };
 
 export default {
+    getHomeShelters,
     incrementCount,
     decrementCount,
     fetchSubredditJson
